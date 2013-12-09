@@ -1,0 +1,6 @@
+[rhel-source-beta]
+name=Red Hat Enterprise Linux 5.9 Beta - x86_64 - Source
+baseurl=ftp://ftp.redhat.com/pub/redhat/linux/beta/5.9/en/os/SRPMS/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta,file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release

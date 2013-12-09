@@ -1,0 +1,14 @@
+---
+:backends:
+  - yaml
+
+:logger: console
+
+:hierarchy:
+  - common
+  - tomcat
+  - modjk
+  - deployWar
+
+:yaml:
+   :datadir: /etc/puppet/hieradata

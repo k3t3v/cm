@@ -1,0 +1,12 @@
+[puppetlabs]
+name=Puppet Labs EL 5
+baseurl=http://yum.puppetlabs.com/el/5/products/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=http://yum.puppetlabs.com/RPM-GPG-KEY-puppetlabs
+
+[puppetlabs-deps]
+name=Puppet Labs Dependencies EL 5 - x_86_64
+baseurl=http://yum.puppetlabs.com/el/5/dependencies/x86_64
+enabled=1
+gpgcheck=0

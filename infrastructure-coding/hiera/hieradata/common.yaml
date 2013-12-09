@@ -1,0 +1,17 @@
+common_java_homedir: /opt/java/jdk1.7.0_45
+common_java_installdir: /opt/java
+common_java_version: jdk-7u45-linux-x64
+common_java_package_format: gz
+common_java_downloadurl: https://dl.dropboxusercontent.com/s/jvfr7fh7bkdgo6y/jdk-7u45-linux-x64.gz
+
+common_tmpdir: /tmp
+common_optdir: /opt
+
+common_cmdwget: /usr/bin/wget
+common_cmdtar: /bin/tar
+common_cmdunzip: /usr/bin/unzip -u
+common_cmdzip: /usr/bin/zip
+common_cmddpkg: /usr/bin/dpkg
+common_cmdaptget: /usr/bin/apt-get
+
+common_default_path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

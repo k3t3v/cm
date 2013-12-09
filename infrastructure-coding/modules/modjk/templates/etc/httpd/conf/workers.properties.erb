@@ -1,0 +1,16 @@
+#
+# This file provides minimal jk configuration properties needed to
+# connect to Tomcat.
+#
+# The workers that jk should create and work with
+#
+
+workers.tomcat_home=/opt/tomcat/apache-tomcat-7.0.47
+workers.java_home=/opt/java/jdk1.7.0_45
+ps=/
+worker.list=devops
+
+worker.devops.port=8080
+worker.devops.host=localhost
+worker.app1.type=ajp13
+worker.app1.lbfactor=1

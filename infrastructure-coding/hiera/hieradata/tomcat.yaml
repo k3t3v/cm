@@ -1,0 +1,5 @@
+tomcat_version: 7.0.47
+tomcat_download_url: http://mirror.rackcentral.com.au/apache/tomcat/tomcat-7/v7.0.47/bin/apache-tomcat-7.0.47.tar.gz
+tomcat_package: apache-tomcat-7.0.47.tar.gz
+tomcat_installdir: /opt/tomcat
+tomcat_homedir: /opt/tomcat/apache-tomcat-7.0.47

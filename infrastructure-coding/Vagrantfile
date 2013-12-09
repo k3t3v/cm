@@ -1,0 +1,23 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = 'centos59_x86_64'
+  # The url from where the 'config.vm.box' box will be fetched if it
+  # doesn't already exist on the user's system.
+  config.vm.box_url = 'centos-59-x64-vbox4210.box'
+  # CentOS takes a while to boot so we need to wait a whole lot longer
+
+  # Share an additional folder to the guest VM. The first argument is
+  # the path on the host to the actual folder, the second is .the path
+  # on the guest to mount the folder
+  config.vm.synced_folder "share", "/vagrant-share"
+  config.vm.network :forwarded_port, guest: 80, host: 9080
+  config.vm.network :forwarded_port, guest: 443, host: 9443
+
+  config.vm.hostname = "devops.vagrant.test"
+  config.vm.provider "virtualbox" do |v|
+    v.customize ['modifyvm', :id, '--memory', '512']
+  end
+  # Provisioning with shell script because puppet is not available yet
+  # config.vm.provision "shell" do |s|
+  # s.path = "share/start.sh"
+  # end
+end
